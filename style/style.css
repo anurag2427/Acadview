@@ -1,0 +1,89 @@
+		header{
+				border:2px solid #6abbc9;
+				background: #00C9FF;  /* fallback for old browsers */
+				background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+				color: red;
+
+		}
+
+		img{
+			float:left;
+			height:495px;
+			width:445px;
+			padding:10px 35px;
+		}
+		
+		.ab{
+			float:right;
+		}
+
+		.abc{
+			height:250px;
+			width:220px;
+		}
+
+		body{
+			background: #43cea2;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+			color:orange;
+		}
+
+				ul {
+    		list-style-type: none;
+    		margin: 0;
+    		padding: 0;
+    		overflow: hidden;
+		}
+
+	#c {
+    	float: left;
+	}
+
+	li {
+    	display: block;
+    	color: white;
+    	padding: 10px 16px;
+    	text-decoration: none;
+	}
+
+	li a {
+    	display: block;
+    	color: white;
+    	text-align: center;
+    	padding: 10px 16px;
+    	text-decoration: none;
+	}
+
+	li a:hover {
+ 	   background-color: #111;
+	}
+
+	i{
+		font-size: 36px;
+		padding:8px 20px;
+	}
+
+	#ab{
+		float:right;
+		height:60px;
+		width:200px;
+		padding:10px 10px 10px 274px;
+	}
+
+	div{
+		float:left;
+	}
+
+	#a,#b{
+		border:3px solid #96f7f5;
+		padding:30px 80px;
+		height:500px;
+		width:500px;
+	}
+
+	footer{
+		padding:20px 80px;
+	}

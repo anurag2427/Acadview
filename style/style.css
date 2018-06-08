@@ -9,9 +9,9 @@
 
 		img{
 			float:left;
-			height:495px;
-			width:445px;
-			padding:10px 35px;
+			height:600px;
+			width:500px;
+			padding:55px 45px;
 		}
 		
 		.ab{
@@ -70,7 +70,7 @@
 		float:right;
 		height:60px;
 		width:200px;
-		padding:10px 10px 10px 274px;
+		padding:10px 20px;
 	}
 
 	div{
@@ -80,8 +80,8 @@
 	#a,#b{
 		border:3px solid #96f7f5;
 		padding:30px 80px;
-		height:500px;
-		width:500px;
+		height:674px;
+		width:674px;
 	}
 
 	footer{

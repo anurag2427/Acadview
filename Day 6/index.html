@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var myArray = [
+  "scissor",
+  "paper",
+  "stone"
+];
+
+
+var player=prompt("Enter your choice between stone, paper and scissor");
+
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
+alert(randomItem);
+
+var abc;
+function play(){
+	if((randomItem=="scissor" && player=="paper") ||(randomItem=="stone" && player=="scissor") ||(randomItem=="paper" && player=="stone"))
+{
+	alert("You lose");
+	abc="lose";
+}
+else if((randomItem=="scissor" && player=="stone") || (randomItem=="stone" && player=="paper") || (randomItem=="paper" && player=="scissor"))
+{
+	alert("You Win");
+	abc="win";
+}
+else{
+	alert("Draw");
+	abc="Draw";
+	
+}
+}
+ play();
+ 
+while((abc=="Draw") && ((player!="stone") || (player!="paper") || (player!="scissor")))
+{
+		var player=prompt("Enter your choice between stone, paper and scissor");
+
+		var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+		play();
+}
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

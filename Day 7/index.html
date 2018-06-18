@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+  background:#7adbd6;
+}
+    #head{
+      background: linear-gradient(to right, #2bc0e4, #eaecc6);
+      padding: 5px 10px;
+      border: 3px solid blue;
+      box-shadow: 3px 3px 3px 3px blue;
+    }
+
+    #forum{
+      background: linear-gradient(to right, #2bc0e4, #eaecc6);
+      color: red;
+      padding: 5px 10px;
+      border: 3px solid blue;
+      box-shadow: 3px 3px 3px 3px blue;
+    }
+
+    #ds{
+      background: linear-gradient(to right, #2bc0e4, #eaecc6);
+      border: 3px solid blue;
+      box-sizing: border-box;
+      width:50%; 
+      padding: 5px 10px;
+      font-size: 20px;
+      box-shadow: 3px 3px 3px 3px blue;
+
+     }
+</style>
+
+<script>
+function sub() {
+	var un1 = document.getElementById("un").value;
+	var ur1 = document.getElementById("ur").value;
+	var um1 = document.getElementById("um").value;
+    var para = document.createElement("P");
+    para.innerHTML = '<div id="ds"><span>Your Detail</span>           <h6>Name : '+un1.toString()+'</h6>           <h6>Roll No : '+ur1.toString()+'</h6>           <h6>Marks : '+um1.toString()+'</h6>        </div>';
+    document.getElementById("sd").appendChild(para);
+}
+</script>
+</head>
+<body>
+
+<div id="head">
+  <h2>Enter Personal Credentials</h2>
+</div>
+<br>
+<form onsubmit="sub()" id="forum">
+	<p>
+  <label>Name</label>
+  <input id="un" type="text" required="required"></p>
+  <p>
+  <label>Registration No</label>
+  <input id="ur" type="text" required="required"></p>
+  <p>
+  <label>Phone Number</label>
+  <input id="um" type="number" required="required"></p>
+  <p>
+  	<input type="submit" name="Submit" value="Submit" >
+  </p>
+</form>
+
+<div id="sd"></div>
+
+</body>
+</html>

@@ -35,11 +35,11 @@ body{
 
 <script>
 function sub() {
-	var un1 = document.getElementById("un").value;
-	var ur1 = document.getElementById("ur").value;
-	var um1 = document.getElementById("um").value;
-    var para = document.createElement("P");
-    para.innerHTML = '<div id="ds"><span>Your Detail</span>           <h6>Name : '+un1.toString()+'</h6>           <h6>Roll No : '+ur1.toString()+'</h6>           <h6>Marks : '+um1.toString()+'</h6>        </div>';
+	var un1 = document.getElementById("userName").value;
+	var ur1 = document.getElementById("regNo").value;
+	var um1 = document.getElementById("phoneNo").value;
+    var para = document.createElement("abc");
+    para.innerHTML = '<div id="ds"><span>Entered Details Are:</span>           <h6>Name : '+userName1.toString()+'</h6>           <h6>Roll No : '+regNo1.toString()+'</h6>           <h6>Marks : '+phoneNo1.toString()+'</h6>        </div>';
     document.getElementById("sd").appendChild(para);
 }
 </script>
@@ -53,13 +53,13 @@ function sub() {
 <form onsubmit="sub()" id="forum">
 	<p>
   <label>Name</label>
-  <input id="un" type="text" required="required"></p>
+  <input id="userName" type="text" required="required"></p>
   <p>
   <label>Registration No</label>
-  <input id="ur" type="text" required="required"></p>
+  <input id="regNo" type="text" required="required"></p>
   <p>
   <label>Phone Number</label>
-  <input id="um" type="number" required="required"></p>
+  <input id="phoneNo" type="number" required="required"></p>
   <p>
   	<input type="submit" name="Submit" value="Submit" >
   </p>

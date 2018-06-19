@@ -3,9 +3,10 @@
 <head>
 <style>
 
-body{
-  background:#7adbd6;
-}
+    body{
+      background:#7adbd6;
+    }
+
     #head{
       background: linear-gradient(to right, #2bc0e4, #eaecc6);
       padding: 5px 10px;
@@ -35,14 +36,16 @@ body{
 
 <script>
 function sub() {
-	var un1 = document.getElementById("userName").value;
-	var ur1 = document.getElementById("regNo").value;
-	var um1 = document.getElementById("phoneNo").value;
+  var a = document.getElementById("name").value;
+  var b = document.getElementById("rno").value;
+  var c = document.getElementById("pno").value;
     var para = document.createElement("abc");
-    para.innerHTML = '<div id="ds"><span>Entered Details Are:</span>           <h6>Name : '+userName1.toString()+'</h6>           <h6>Roll No : '+regNo1.toString()+'</h6>           <h6>Marks : '+phoneNo1.toString()+'</h6>        </div>';
-    document.getElementById("sd").appendChild(para);
-}
+    para.innerHTML = '<div id="ds"><span>Data You Entered Is: </span><h6>Name : '+a.toString()+'</h6><h6>Roll No : '+b.toString()+'</h6><h6>Marks : '+c.toString()+'</h6></div><br>';
+
+    document.getElementById("write").appendChild(para);
+  }
 </script>
+
 </head>
 <body>
 
@@ -50,22 +53,23 @@ function sub() {
   <h2>Enter Personal Credentials</h2>
 </div>
 <br>
-<form onsubmit="sub()" id="forum">
+
+<form id="forum" action="#!" onsubmit="sub()" >
 	<p>
   <label>Name</label>
-  <input id="userName" type="text" required="required"></p>
+  <input id="name" type="text" required="required"></p>
   <p>
   <label>Registration No</label>
-  <input id="regNo" type="text" required="required"></p>
+  <input id="rno" type="text" required="required"></p>
   <p>
   <label>Phone Number</label>
-  <input id="phoneNo" type="number" required="required"></p>
+  <input id="pno" type="number" required="required"></p>
   <p>
-  	<input type="submit" name="Submit" value="Submit" >
+  	<input type="submit" value="Submit">
   </p>
 </form>
-
-<div id="sd"></div>
+<br>
+<div id="write"></div>
 
 </body>
 </html>
